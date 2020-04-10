@@ -12,7 +12,7 @@ public class HelloController {
 
     @RequestMapping("/success")
     public String hello(Map<String,Object> map){
-        map.put("hello","你好!");
+        map.put("hello","你好!！");
         return "success";
     }
 }
