@@ -11,7 +11,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @Configuration
 public class MyMvcConfig extends WebMvcConfigurerAdapter {
-
     @Bean  //将组件注册到容器中，才能识别。
     public WebMvcConfigurerAdapter webMvcConfigurerAdapter(){
         WebMvcConfigurerAdapter adapter =new WebMvcConfigurerAdapter() {
