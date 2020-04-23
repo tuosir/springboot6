@@ -17,3 +17,13 @@ spring:
     testOnBorrow: false
     testOnReturn: false
     poolPreparedStatements: true
+  jpa:
+    hibernate:
+#      更新创建数据表
+      ddl-auto: update
+#      控制台显示sql
+    show-sql: true
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  # 指定sql映射文件位置
+  mapper-locations: classpath:mybatis/mapper/*.xml
